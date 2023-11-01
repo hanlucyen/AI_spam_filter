@@ -203,8 +203,7 @@ Hình 27. Tạo thêm cột  chứa chuỗi đã được chuyển
 Hình 29. Code biểu diễn mức độ xuất hiện của các từ có thể là spam
 
 --> Kết quả:
-
-![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/59f6a54f-419c-45f8-9832-3c6e83e82c18)
+ 
 
 ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/2d9c66e7-1e22-4c70-b390-7a4fdc82c216)
 ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/55217bef-358f-4324-aeb4-ed395ddd2542)
