@@ -189,15 +189,12 @@ Hình 25. Chuỗi ký tự đặc biệt
 
  Hình 26. Code tạo hàm chuyển đổi loại bỏ những ký tự đậc biệt
 
+--> Kết quả:
+
  ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/ff798de1-13fc-493a-a055-6d18797ed4f3)
 
 Hình 27. Tạo thêm cột  chứa chuỗi đã được chuyển 
-
---> Kết quả:
-
-![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/f769b31e-f7d4-4838-9fb8-30f5795c6bac)
-
-Hình 28. Bảng tính mới được cập 
+   
 
 - Từ khóa có thể là spam
 
