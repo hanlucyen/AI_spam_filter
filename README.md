@@ -30,3 +30,59 @@ Hình 1. Quy trình lọc thư rác tiêu chuẩn.
 
 # Thủ tục của dự án Máy học ( Procedure of Machine Learning project)
 ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/d0f41b4f-e391-44cd-a766-419bf442db52)
+
+Hình 2. Thủ tục thực hiện tổng quát
+
+## Bước 1: Chọn dữ liệu ( Collecting data)
+- Gọi các thư viện cần thiết ( Import required libraries)
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/be84130c-e35b-4309-a17d-0d78ad815533)
+
+Hình 3. Các thư viện  
+
+## Bước 2: Chuẩn bị dữ liệu ( Preparing data)
+- Mở tệp chứa dữ liệu spam_ham_dataset.csv ( load file )
+- ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/abc3e1ee-bf03-49f4-a113-e7bda34a3084)
+
+Hình 4. Hình code mở tệp chứa dữ liệu
+
+--> Kết quả: 
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/53733f77-2c5a-44f9-a6bd-6f6016fa644a)
+
+Hình 5. Mở tệp
+
+Mô tả bộ dữ liệu có 5171 hàng và 4 cột:
+ + Cột 1: Trống tên cột: chứa các số được sắp xếp cho tệp dữ liệu là duy nhất.
+ + Cột 2: label là nhãn đánh dấu các ham-spam.
+ + Cột 3: text là chuỗi ký tự.
+ + Cột 4: label_num là cột mã hóa giá trị của ham thành 0 và spam thành 1.
+ 
+- Biến đổi dữ liệu ( Convert it to a data frame)
+ + Thêm tên cho cột bị trống
+  ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/7fa3b045-82e0-41f2-8154-30c72ef4c04e)
+
+Hình 6. Code thêm tên cho cột bị trống
+
+--> Kết quả:
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/fd8f7978-9bad-480a-a648-717893d9f600)
+
+Hình 7. Thêm tên cho cột
+
+ + Tạo hàm loại bỏ ký tự Supject đứng đầu các chuỗi trong cột text
+
+ ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/0e915b9b-189f-41b2-8841-3729e722c2c3)
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/b3f95e89-65c9-4e6c-bbb3-24600acbc5d6)
+
+Hình 8. Tạo hàm loại bỏ ký tự
+
+--> Kết quả: 
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/51ab7d84-a5c6-4091-b8be-97619e0add41)
+
+Hình 9. Thêm cột  Subject chứa chuỗi ký tự
+
+
+
