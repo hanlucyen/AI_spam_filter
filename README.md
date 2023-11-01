@@ -84,5 +84,170 @@ Hình 8. Tạo hàm loại bỏ ký tự
 
 Hình 9. Thêm cột  Subject chứa chuỗi ký tự
 
+- Các tính năng và mục tiêu đầu vào riêng biệt
+
+ 
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/e762a5a6-532a-40dc-87f3-ed302bb8d367)
+
+Hình 10. Input data
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/a9e44bd5-3348-43ca-9aa0-3e7946f15374)
+
+Hình 11. Output data
+
+## Bước 3: Chọn mô hình ( Choosing model)
+
+### EDA
+EDA: Exploratory Data Analysis – Phân tích Khám phá Dữ liệu
+- EDA là phương pháp giúp xác định cấu trúc dữ liệu bao gồm số lượng, kiểu dữ liệu, trường dữ liệu, sự liên kết giữa các trường dữ liệu,... Khi xác định được cấu trúc dữ liệu, các nhà phân tích dữ liệu có thể hiểu được mối quan hệ giữa các dữ liệu trong tệp.
+
+- Phân tích tỷ lệ ham - spam
+
+ ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/87038eaa-99ee-4286-bf7b-a8818a6b1169)
+ 
+Hình 12. Code phân tích tỷ lệ ham - spam 
+
+--> Kết quả:
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/7a884fb0-899e-4425-8c87-dc6a253834ca)
+
+Hình 13. Biểu tròn thể hiện tỷ lệ ham - spam
+
+- Một số chỉ số thống kê cơ bản
+
+ ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/ce43fa2a-998f-4825-a588-1849bd64c650)
+
+
+ Hình 14. Code thống kê cơ bản
+
+ --> Kết quả:
+
+ ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/ad72b202-395b-4778-a3a2-a84e11c8ffbb)
+
+Hình 15. Bảng thống kê cơ bản
+
+- Đo độ dài chuỗi bằng nltk: ( Natural Language Toolkit - xử lý ngôn ngữ tự nhiên thống kê )
+ ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/1a0c8d70-ec86-4dee-8340-66a8b150d240)
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/ff6db293-d028-4c54-b9d4-458371635aa3)
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/dbc29969-62d4-4b0c-baa9-9728829ff898)
+
+Hình 16. Code đo độ dài chuỗi tròng cột Subjects
+
+--> Kết quả:
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/382569ac-e693-46b1-89c8-7ab45ab98552)
+
+Hình 17. Thể hiện thêm các cột đo độ dài vừa tạo
+
+- Thống kê về spam
+ 
+ ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/eec4aeb2-3a7d-4f84-8170-92e41eede939)
+
+ Hình 18. Thống kê cơ bản về spam
+
+ --> Kết quả:
+ 
+ ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/aeb2f99f-4842-4022-8373-3ea64d56cb0a)
+
+ Hình 19. Kết quả thống kê về 
+
+ ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/945a7039-cb88-4186-aa11-518da9f51a70)
+
+Hình 20. Code heatmap 
+
+--> Kết quả: 
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/80930660-9081-42d5-b4bd-6d0c25d86c5d)
+
+Hình 21. Heatmap 
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/287dda11-38ed-4698-8c86-ed86d35c9b1d)
+
+Hình 22. Code ngôn ngữ tự nhiên
+
+--> Kết quả:
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/0d43b5fb-36b3-43ff-8ce7-01605e71ba82)
+
+Hình 23. Chuỗi ngôn ngữ tự nhiên 
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/6de40f83-d63a-4af9-ba2a-95400b86eb90)
+
+Hình 24. Code chuỗi ký tự đặc biệt
+
+--> Kết quả:
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/b875b32e-72c2-477d-9a7f-ad0a2769acf4)
+
+Hình 25. Chuỗi ký tự đặc biệt
+
+- Tạo hàm chuyển đổi loại bỏ những ký tự đậc biệt
+
+ ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/309fde52-b7f5-4ec1-afc5-c0d76fc8e0ad)
+
+ Hình 26. Code tạo hàm chuyển đổi loại bỏ những ký tự đậc biệt
+
+ ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/ff798de1-13fc-493a-a055-6d18797ed4f3)
+
+Hình 27. Tạo thêm cột  chứa chuỗi đã được chuyển 
+
+--> Kết quả:
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/f769b31e-f7d4-4838-9fb8-30f5795c6bac)
+
+Hình 28. Bảng tính mới được cập 
+
+- Từ khóa có thể là spam
+
+   ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/92fc8e68-147a-43ec-9907-bab3583c875a)
+
+Hình 29. Code biểu diễn mức độ xuất hiện của các từ có thể là spam
+
+--> Kết quả:
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/59f6a54f-419c-45f8-9832-3c6e83e82c18)
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/2d9c66e7-1e22-4c70-b390-7a4fdc82c216)
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/55217bef-358f-4324-aeb4-ed395ddd2542)
+
+Hình 30.  Biểu đồ biểu diễn mức độ xuất hiện của các từ có thể là spam
+
+ - Từ khóa là ham
+
+ ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/27d86148-cfc9-458c-82bb-5b3f7608626e)
+
+Hình 31. Code biểu diễn mức độ xuất hiện của các từ có thể là ham
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/ee2d517e-a9d0-4351-a79e-bb62638adb78)
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/20522f90-c953-47bd-b7bb-7c4588ff57dd)
+
+Hình 30.  Biểu đồ biểu diễn mức độ xuất hiện của các từ có thể là 
+
+### NB
+NB: Naive Bayes
+
+- Đánh giá ma trận ( Evaluation Matrix)
+
+  ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/04beb03c-c153-486a-8042-3ff199620657)
+
+Hình . Naive Bayes
+
+  ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/915a75e6-1fae-4aa3-8e57-ccef2a8e8810)
+
+  Hình . Công thức 
+
+### SVM 
+
+SVM: Support Vector Machine
+
+Nguồn: https://machinelearningcoban.com/2017/04/09/smv/
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/f269dedb-74ea-4091-b04a-974dd9d0bbaa)
+
+Hình . Support Vector Machine
+
+
 
 
