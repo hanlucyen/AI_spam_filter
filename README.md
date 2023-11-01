@@ -228,11 +228,22 @@ NB: Naive Bayes
 
   ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/04beb03c-c153-486a-8042-3ff199620657)
 
-Hình . Naive Bayes
+Hình 31. Naive Bayes
 
   ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/915a75e6-1fae-4aa3-8e57-ccef2a8e8810)
 
-  Hình . Công thức 
+  Hình 32. Công thức tính
+
+ ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/20709746-7bab-47e1-b5e8-dd9af166b9b6)
+
+ Hình 33. Code thiết lập Naive Bayes
+
+ --> Kết quả:
+ 
+ ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/e0fd3534-1a84-491e-a09c-928159dbd673)
+
+Hình 34. Naive Bayes classifier
+
 
 ### SVM 
 
@@ -244,6 +255,117 @@ Nguồn: https://machinelearningcoban.com/2017/04/09/smv/
 
 Hình . Support Vector Machine
 
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/9d98bd56-d339-444e-a212-9dacc5ce28cb)
+
+ Hình 35. Code thiết lập SVC
+
+--> Kết quả:
+
+ ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/f9eb2d77-5d9b-40ab-b076-034a364dd391)
+ 
+ Hình 36. Sklearn.svm.SVC
+
+## Bước 4: Huấn luyện mô hình ( Training model)
+
+Sử dụng 80% bộ dữ liệu để huấn luyện
+ 
+### NB
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/a55e1678-94fd-41d1-bd5a-4ea59d68a998)
+
+Hình 37. Code huấn luyện bằng thuật toán NB
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/1ea2ea64-1fb5-4af1-87a1-aeccd2901f88)
+
+Hình 38. Biểu đồ thế hiện điểm huấn luyện  
+
+### SVM
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/388c3207-6a5b-4375-9fb5-68d5bccef5be)
+
+Hình 39. Code huấn luyện bằng thuật toán svm
+
+--> Kết quả:
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/3a703fc9-654e-4aee-930f-487f9a52e8b7)
+
+Hình 40. Biểu đồ thế hiện điểm huấn luyện
+
+## Bước 5: Đánh giá mô hình ( Evaluation model)
+
+### NB
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/628a0535-c644-42cc-be7b-ac204e844936)
+
+Hình 41. Code các thông số của NB
+
+--> Kết quả:
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/1e64f452-e424-4356-af91-ef376372d9c5)
+
+Hình 42. Thông số của NB
+
+### SVM
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/ee66d25f-5336-407c-b411-f3822a7a6bd7)
+
+Hình 43. Code các thông số của SVM
+
+--> Kết quả:
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/6fd73224-8a82-4398-bf4c-dc0fe2a301ec)
+
+Hình 43. Thông số của SVM
 
 
+## Bước 6: Quyết định ( Making desicion)
 
+Sử dụng 20% test
+
+### NB
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/843441b4-5e16-4bf8-ab62-fd14fe546231)
+
+Hình 44. Code dự đoán - thực tế
+
+--> Kết quả:
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/ae3fb988-213e-4dc4-848b-29b5b147d6c9)
+
+Hình 45. Kết quả
+
+- Biểu diễn
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/445ce473-9103-47b0-8649-02d9f6f0bbaa)
+
+Hình 46. Code biểu diễn bằng biểu đồ
+
+--> Kết quả:
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/a9ddd77b-ac51-484a-9d52-31e640ee6cb4)
+
+Hình 47. Biểu đồ dự đoán - thực tế / spam - ham 
+
+### SVM
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/96220027-70e7-4fed-a5ef-5e7bd20264dc)
+
+Hình 48. Code dự đoán - thực tế
+
+--> Kết quả:
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/31f814c2-0038-4569-9449-6348448fcb11)
+
+Hình 49. Kết quả
+
+- Biểu diễn
+
+![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/5dc80c13-aba3-434a-854f-f0d1327fa4c7)
+
+Hình 50. Code biểu diễn bằng biểu đồ 
+
+--> Kết quả:
+
+ ![image](https://github.com/hanlucyen/AI_spam_filter/assets/92861887/fd680532-7396-46f4-b1c1-31baa43675c5)
+
+ HÌnh 51. Biểu đồ dự đoán - thực tế / spam - ham
